@@ -3,7 +3,7 @@ require 'carrier_wave_base64_uploader/base64_string_io'
 
 module CarrierWaveBase64Uploader
   # Override file managing to manually decode the base64 string
-  def cache!(file)
+  def cache!(file = sanitized_file)
     if file.is_a?(String) && file.start_with?('data:image')
       filename = "#{SecureRandom.uuid}.photo"
       filedata = file
