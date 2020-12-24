@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module CarrierWaveBase64Uploader
   class Base64StringIO < StringIO
     class ArgumentError < StandardError; end

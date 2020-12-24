@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'carrier_wave_base64_uploader/version'
 require 'carrier_wave_base64_uploader/base64_string_io'
 
